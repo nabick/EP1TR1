@@ -1,0 +1,25 @@
+//Area de un circulo
+var radio = 56;
+var area=Math.PI*Math.pow(radio,2);
+
+//Area de un triangulo
+var altura = 34;
+var base = 56;
+var area=base*altura/2;
+
+//Area de un cuadrado
+var lado1 = 3;
+var lado2= 5;
+var area=lado1*lado2;
+
+//Vocales
+var palabra = "Hola";
+var arrayVocales = ["a", "e", "i", "o", "u"];
+palabra = palabra.toLocaleLowerCase();
+for (var i = 0; i < palabra.length; i++)
+{
+    for(var c = 0; c < arrayVocales.length; c++)
+    {
+        console.log(palabra.charAt(i), arrayVocales[c], palabra.charAt(i) !== arrayVocales[c] ? "cons" : "vocal");
+    }
+}
